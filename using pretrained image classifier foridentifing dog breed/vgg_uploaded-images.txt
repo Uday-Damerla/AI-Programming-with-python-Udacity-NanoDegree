@@ -1,0 +1,94 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:                     Dog_04.jpg  label:                        dog
+ 2 key:          RE_Classic_350_01.jpg  label:                 re classic
+ 3 key:                     Dog_03.jpg  label:                        dog
+ 4 key:                     Dog_02.jpg  label:                        dog
+ 5 key:            Bengal_Tiger_01.jpg  label:               bengal tiger
+ 6 key:                     Dog_01.jpg  label:                        dog
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_04.jpg: 
+Real:                        dog   Classifier:                      chihuahua
+
+         RE_Classic_350_01.jpg: 
+Real:                 re classic   Classifier:                          moped
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:             labrador retriever
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+           Bengal_Tiger_01.jpg: 
+Real:               bengal tiger   Classifier:         tiger, panthera tigris
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+# Total Images 6 # Matches: 0 # NOT Matches: 6
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_04.jpg: 
+Real:                        dog   Classifier:                      chihuahua  
+PetLabelDog: 1  ClassLabelDog: 1
+
+         RE_Classic_350_01.jpg: 
+Real:                 re classic   Classifier:                          moped  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_03.jpg: 
+Real:                        dog   Classifier:             labrador retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+           Bengal_Tiger_01.jpg: 
+Real:               bengal tiger   Classifier:         tiger, panthera tigris  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 6 # Matches: 0 # NOT Matches: 6
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  4  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  4  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   6
+N Dog Images        :   4
+N Not-Dogs Images   :   2
+ summary statistics (percentages) on Model Run 
+100.0% Correct Dog
+0.0% Correct Breed
+100.0% Correct Not-a-Dog
+0.0% Match
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                      chihuahua
+Real:                        dog   Classifier:             labrador retriever
+Real:                        dog   Classifier:               golden retriever
+Real:                        dog   Classifier:               golden retriever
+
+** Total Elapsed Runtime: 0:0:4
